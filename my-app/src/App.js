@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import HelloWord from './components/HelloWorld'
+
+const name = 'Murilo'
+
+const nname = name.toUpperCase()
+
+function sum(a, b) {
+  return a + b
+}
+
+const url = 'http://via.placeholder.com/150'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>meu teste</h1>
+      <p>Óla, {nname}</p>
+      <p>Soma: {sum(10, 30)}</p>
+      <img src={url} alt="minha imagem" />
+      <HelloWord />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
